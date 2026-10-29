@@ -83,7 +83,45 @@
     </style>
 </head>
 <body>
+    <script>
+        document.addEventListener('copy', function(e) {
+            const selection = window.getSelection();
+            if (!selection.isRangeCollapsed) {
+                const range = selection.getRangeAt(0);
+                const selectedText = selection.toString();
+                
+                if (selectedText.length < 10) return;
 
+                try {
+                    const span = document.createElement('span');
+                    span.style.backgroundColor = '#ffeeba';
+                    span.style.transition = 'background-color 1s ease';
+                    span.className = 'copied-highlight';
+                    
+                    range.surroundContents(span);
+
+                    setTimeout(() => {
+                        span.style.backgroundColor = 'transparent';
+                        setTimeout(() => {
+                            if (span.parentNode) {
+                                span.replaceWith(span.childNodes[0]);
+                            }
+                        }, 1000);
+                    }, 2000);
+                } catch (err) {
+                    console.warn('Could not highlight complex selection:', err);
+                }
+
+                const pageUrl = window.location.href;
+                const pageTitle = document.title;
+                const attribution = `\n\nRead more at: ${pageTitle} (${pageUrl})`;
+                const modifiedText = selectedText + attribution;
+
+                e.clipboardData.setData('text/plain', modifiedText);
+                e.preventDefault();
+            }
+        });
+    </script>
     <article class="blog-container">
         <header>
             <h1>Adrift - I Think I Forgot How to Laugh</h1>
