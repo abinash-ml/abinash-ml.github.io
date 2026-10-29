@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building neGPT: A Small Language Model on Northeast India Historical Data</title>
+    <style>
+        :root {
+            --bg-color: #f9f9fb;
+            --card-bg: #ffffff;
+            --text-primary: #2d3748;
+            --text-secondary: #718096;
+            --accent-color: #3182ce;
+            --border-color: #e2e8f0;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1a202c;
+                --card-bg: #2d3748;
+                --text-primary: #edf2f7;
+                --text-secondary: #a0aec0;
+                --accent-color: #63b3ed;
+                --border-color: #4a5568;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Georgia, serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.8;
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .blog-container {
+            max-width: 680px;
+            width: 100%;
+            background-color: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border: 1px solid var(--border-color);
+        }
+
+        header {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+
+        .date {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .post-content p {
+            margin-bottom: 1.25rem;
+            font-size: 1.1rem;
+            letter-spacing: 0.01em;
+        }
+
+        .post-content ul {
+            margin-bottom: 1.25rem;
+            padding-left: 1.5rem;
+        }
+
+        .post-content li {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .post-content a {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        .post-content a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <article class="blog-container">
+        <header>
+            <h1>Building neGPT: A Small Language Model on Northeast India Historical Data</h1>
+            <time class="date" datetime="2026-03-14">14 Mar, 2026</time>
+        </header>
+        
+        <main class="post-content">
+            <p>I have been wanting to understand GPTs not just at a surface level, but from the inside out — how they are built, how they are trained, and what really happens between raw text and generated output.</p>
+            
+            <p>After studying from Andrej Karpathy’s material, I decided that the best way to truly learn the intricacies of GPT-style models was to build one around a domain that genuinely interests me. That is how neGPT started.</p>
+            
+            <p>For now, neGPT is a small language model project built on a historical data corpus focused on Northeast India. The idea is to work with domain-specific text and use this project as a practical way to understand the full pipeline behind language models — from data collection and preprocessing to training, evaluation, inference, and eventually deployment.</p>
+            
+            <p>At this stage, this post is an introduction to the project rather than the full technical write-up.</p>
+            
+            <p>In the detailed write-up that I will publish later, I plan to cover the entire process step by step, including:</p>
+            
+            <ul>
+                <li>how I came up with the project idea</li>
+                <li>why I chose Northeast India historical data as the corpus</li>
+                <li>how I collected and prepared the dataset</li>
+                <li>preprocessing and tokenization</li>
+                <li>model design and training setup</li>
+                <li>experiments, challenges, and observations</li>
+                <li>inference and output generation</li>
+                <li>deployment and future improvements</li>
+            </ul>
+            
+            <p>The goal of this project is not just to build a small domain-specific language model, but also to deeply learn how GPT-like systems work in practice by implementing and experimenting with them myself.</p>
+            
+            <p>I will keep updating this as the project progresses, and later publish a complete end-to-end account of the journey from concept to deployment.</p>
+            
+            <p>Thank you for reading. If you found this blog useful or enjoyed reading it, you can buy me a coffee here: <a href="https://ko-fi.com/abinashpradhan" target="_blank" rel="noopener noreferrer">Buy me a coffee</a></p>
+        </main>
+    </article>
+
+</body>
+</html>

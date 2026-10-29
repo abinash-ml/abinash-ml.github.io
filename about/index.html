@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abinash Pradhan | ML Engineer & Data Scientist</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Abinash Pradhan | ML Engineer & Data Scientist">
+    <meta name="description"
+        content="Abinash Pradhan is a passionate ML Engineer and Data Scientist specializing in Natural Language Processing and Deep Learning. Currently pursuing BSc in Data Science with a CGPA of 8.61.">
+    <meta name="keywords"
+        content="ML Engineer, Data Scientist, AI Engineer, Natural Language Processing, Deep Learning, Python, Data Science, Machine Learning, Abinash Pradhan">
+    <meta name="author" content="Abinash Pradhan">
+    <meta name="application-name" content="Abinash Pradhan Portfolio">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://abinash.net">
+    <meta property="og:title" content="Abinash Pradhan | ML Engineer & Data Scientist">
+    <meta property="og:description"
+        content="Abinash Pradhan is a passionate ML Engineer and Data Scientist specializing in Natural Language Processing and Deep Learning. Currently pursuing BSc in Data Science with a CGPA of 8.61.">
+    <meta property="og:site_name" content="Abinash Pradhan Portfolio">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://abinash.net/about">
+    <meta property="twitter:title" content="Abinash Pradhan | ML Engineer & Data Scientist">
+    <meta property="twitter:description"
+        content="Abinash Pradhan is a passionate ML Engineer and Data Scientist specializing in Natural Language Processing and Deep Learning. Currently pursuing BSc in Data Science with a CGPA of 8.61.">
+    <meta property="twitter:creator" content="@abinashp01">
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="generator" content="HTML5">
+    <meta name="theme-color" content="#4f46e5">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Abinash Pradhan">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://abinash.net/about.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://abinash.net/assets/favicon.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Abinash Pradhan",
+        "jobTitle": "ML Engineer & Data Scientist",
+        "url": "https://abinash.net/about.html",
+        "sameAs": [
+          "https://github.com/abinash-ml",
+          "https://in.linkedin.com/in/abinash-pradhan-a42157297"
+        ],
+        "knowsAbout": ["Machine Learning", "Data Science", "Artificial Intelligence", "Natural Language Processing", "Deep Learning"],
+        "description": "Abinash Pradhan is a passionate ML Engineer and Data Scientist specializing in Natural Language Processing and Deep Learning. Currently pursuing BSc in Data Science with a CGPA of 8.61.",
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Bhadrak Autonomous College",
+          "sameAs": "https://bhadrakcollege.ac.in/"
+        },
+        "skills": "Python, TensorFlow, PyTorch, Scikit-learn, Data Analysis, Machine Learning, Deep Learning, NLP"
+      }
+    }
+    </script>
+
+    <!-- ScrollReveal Library -->
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --secondary: #64748b;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gradient-primary: linear-gradient(135deg, #4f46e5 0%, #818cf8 100%);
+            --card-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --card-border-radius: 1rem;
+            --tag-bg: #f3f4f6;
+            --border-color: #e5e7eb;
+            --background-color: #f0f4f8;
+            --card-background: #ffffff;
+            --text-color: #0f172a;
+        }
+
+        /* Dark mode variables */
+        .dark-mode {
+            --primary: #818cf8;
+            --secondary: #94a3b8;
+            --dark: #e2e8f0;
+            --light: #0f172a;
+            --background-color: #1e293b;
+            --card-background: #1e293b;
+            --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            --text-color: #e2e8f0;
+            --border-color: #334155;
+            --tag-bg: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: var(--transition);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            position: relative;
+            min-height: 100vh;
+            background-image:
+                radial-gradient(circle at 0% 0%, rgba(79, 70, 229, 0.1) 0%, transparent 25%),
+                radial-gradient(circle at 100% 100%, rgba(79, 70, 229, 0.1) 0%, transparent 25%);
+        }
+
+        .header {
+            background: var(--gradient-primary);
+            color: white;
+            height: 300px;
+            /* Fixed height for uniformity */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 0;
+            animation: fadeInUp 1s ease-in-out;
+            /* Consistent animation */
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: var(--background-color);
+            transform: skewY(-3deg);
+        }
+
+        .dark-mode .header {
+            background: var(--gradient-primary);
+            /* Keep header visible in dark mode */
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                height: 250px;
+                /* Adjust height for smaller screens */
+            }
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards 0.3s;
+        }
+
+        .animated-text-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 3rem;
+            margin-bottom: 1.5rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards 0.5s;
+        }
+
+        .static-text {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-right: 0.5rem;
+        }
+
+        .dynamic-text-wrapper {
+            font-size: 1.8rem;
+            font-weight: 700;
+            font-family: 'Dancing Script', cursive;
+            position: relative;
+            height: 3rem;
+            display: inline-block;
+            overflow: hidden;
+        }
+
+        .dynamic-text-wrapper .dynamic-text {
+            position: relative;
+            display: inline-block;
+            color: #ffffff;
+        }
+
+        .dynamic-text-wrapper .dynamic-text:after {
+            display: none;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes typing {
+
+            40%,
+            60% {
+                left: calc(100% + 4px);
+            }
+
+            100% {
+                left: 0;
+            }
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -3rem auto 4rem;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .about-section {
+            background: var(--card-background);
+            border-radius: var(--card-border-radius);
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--border-color);
+            opacity: 0;
+            animation: fadeIn 0.8s forwards;
+            animation-delay: 0.2s;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 0;
+            background: var(--gradient-primary);
+            transition: height 0.4s ease;
+        }
+
+        .about-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(15, 23, 42, 0.12);
+        }
+
+        .about-section:hover::before {
+            height: 100%;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .about-section:hover .section-title {
+            border-color: var(--primary);
+        }
+
+        .about-content p {
+            margin-bottom: 1.25rem;
+            font-size: 1.05rem;
+            color: var(--text-color);
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 1rem;
+        }
+
+        .skill-tag {
+            background: var(--tag-bg);
+            color: var(--primary);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            transition: var(--transition);
+        }
+
+        .skill-tag:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .certification-item {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .certification-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .certification-name {
+            font-weight: 600;
+            color: var(--dark);
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+            transition: var(--transition);
+        }
+
+        .certification-name:hover {
+            color: var(--primary);
+        }
+
+        .certification-issuer {
+            color: var(--secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            padding: 1.5rem;
+            text-align: center;
+            background-color: var(--card-background);
+            border-top: 1px solid var(--border-color);
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .footer-social {
+            margin: 0.75rem 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.25rem;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            background-color: var(--background-color);
+            color: var(--primary);
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-link:hover {
+            color: var(--light);
+            background-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .footer-text {
+            color: var(--text-color);
+            font-size: 0.85rem;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        .footer-proverb {
+            font-style: italic;
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Dark mode overrides */
+        .dark-mode footer {
+            background-color: var(--card-background);
+            border-color: var(--border-color);
+        }
+
+        .dark-mode .social-link {
+            background-color: var(--background-color);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .dark-mode .social-link:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+
+            .animated-text-container {
+                font-size: 1.5rem;
+                height: 2.5rem;
+            }
+
+            .dynamic-text-wrapper {
+                height: 2.5rem;
+                line-height: 2.5rem;
+            }
+
+            .dynamic-text span {
+                height: 2.5rem;
+            }
+
+            @keyframes slide {
+                100% {
+                    top: -10rem;
+                }
+            }
+
+            .nav-container {
+                padding: 1rem;
+            }
+
+            .about-section {
+                padding: 1.75rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-right {
+                gap: 1rem;
+            }
+
+            .animated-text-container {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .static-text {
+                margin-right: 0;
+                margin-bottom: 0.5rem;
+            }
+
+            .footer-nav {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+        }
+
+        .skill-category {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin: 1.5rem 0 0.75rem;
+            font-weight: 600;
+        }
+
+        .skill-category:first-child {
+            margin-top: 0;
+        }
+
+        /* Navigation */
+        .nav {
+            background: var(--card-background);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 1.25rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-right {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            color: var(--dark);
+            text-decoration: none;
+            position: relative;
+            padding: 0.5rem 0;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--primary);
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        /* Theme toggle */
+        .theme-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--tag-bg);
+            color: var(--primary);
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+
+        .theme-toggle:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-right">
+                <a href="https://abinash.net" class="nav-link">Home</a>
+                <a href="https://abinash.bearblog.dev/" class="nav-link">Blog</a>
+                <a href="https://abinash.net/projects/" class="nav-link">Projects</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <h1>About Me</h1>
+        <div class="animated-text-container" role="status" aria-live="polite">
+            <div class="static-text">I am</div>
+            <div class="dynamic-text-wrapper">
+                <span class="dynamic-text"></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- About Me Section -->
+        <section class="about-section">
+            <h2 class="section-title">Who I Am</h2>
+            <div class="about-content">
+                                <p>Hi, I’m Abinash. I’m a machine learning enthusiast focused on building and understanding intelligent systems from the ground up. <br> <br>
+                                    I wasn’t always headed in this direction. I was more drawn to the humanities - especially history. Data science happened almost by accident, but somewhere along the way, curiosity turned into something much deeper. <br>
+                <br>My journey into AI started with Python and data fundamentals, and gradually evolved into working with machine learning, deep learning, natural language processing and computer vision. What drives me is not just using models, but understanding how they work internally and building them with clarity.<br>
+                <br>I’ve spent time learning through hands-on implementation-developing projects, experimenting with architectures, and breaking down complex systems into something intuitive. Influences like Andrew Ng’s machine learning courses, DeepLearning.AI programs, and Andrej Karpathy’s work have shaped how I approach problem-solving in AI.<br>
+                <br>My current focus lies in NLP, and building end-to-end systems with real-world applications. I’m particularly interested in developing solutions where technical depth meets meaningful domains.<br>
+                <br>I’m currently looking for opportunities where I can continue learning, build real systems, and grow through research or engineering work.</p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="about-section">
+            <h2 class="section-title">Education</h2>
+            <div class="about-content">
+                <p><strong>BSc in Data Science</strong> (2023-2026)</p>
+                <p>Bhadrak Autonomous College, Bhadrak, Odisha, India</p>
+                <p>CGPA: 8.61</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="about-section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="about-content">
+                <h3 class="skill-category">Languages</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="fab fa-python" aria-hidden="true"></i>&nbsp; Python</span>
+                    <span class="skill-tag"><i class="fab fa-java" aria-hidden="true"></i>&nbsp; Java</span>
+                    <span class="skill-tag"><i class="fas fa-code" aria-hidden="true"></i>&nbsp; C++</span>
+                    <span class="skill-tag"><i class="fas fa-code" aria-hidden="true"></i>&nbsp; R</span>
+                    <span class="skill-tag"><i class="fas fa-database" aria-hidden="true"></i>&nbsp; SQL</span>
+                </div>
+
+                <h3 class="skill-category">Frameworks & Libraries</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="fas fa-calculator" aria-hidden="true"></i>&nbsp; NumPy</span>
+                    <span class="skill-tag"><i class="fas fa-table" aria-hidden="true"></i>&nbsp; Pandas</span>
+                    <span class="skill-tag"><i class="fas fa-fire" aria-hidden="true"></i>&nbsp; PyTorch</span>
+                    <span class="skill-tag"><i class="fas fa-brain" aria-hidden="true"></i>&nbsp; TensorFlow</span>
+                    <span class="skill-tag"><i class="fas fa-cogs" aria-hidden="true"></i>&nbsp; Scikit-learn</span>
+                    <span class="skill-tag"><i class="fas fa-chart-pie" aria-hidden="true"></i>&nbsp; Matplotlib</span>
+                </div>
+
+                <h3 class="skill-category">Core Skills</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="fas fa-robot" aria-hidden="true"></i>&nbsp; Machine
+                        Learning</span>
+                    <span class="skill-tag"><i class="fas fa-network-wired" aria-hidden="true"></i>&nbsp; Deep
+                        Learning</span>
+                    <span class="skill-tag"><i class="fas fa-network-wired" aria-hidden="true"></i>&nbsp; Computer Vision</span>
+                    <span class="skill-tag"><i class="fas fa-brain" aria-hidden="true"></i>&nbsp; NLP</span>
+                    <span class="skill-tag"><i class="fas fa-chart-bar" aria-hidden="true"></i>&nbsp; Data
+                        Analysis</span>
+                    <span class="skill-tag"><i class="fas fa-database" aria-hidden="true"></i>&nbsp; Data
+                        Engineering</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="about-section">
+            <h2 class="section-title">Certifications</h2>
+            <div class="about-content">
+                <div class="certification-item">
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/V27D0D3EE4HJ"
+                        target="_blank" style="text-decoration: none;">
+                        <div class="certification-name">Machine Learning Specialization</div>
+                    </a>
+                    <div class="certification-issuer">deeplearning.ai</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interests Section -->
+        <section class="about-section">
+            <h2 class="section-title">Interests & Hobbies</h2>
+            <div class="about-content">
+                <p>Cricket has been a constant in my life. Whether it’s the timing of a cover drive or the satisfaction of taking a wicket, I enjoy every part of the game. And it’s not just playing-I genuinely enjoy watching the game as well. As strange as it might sound, I often find myself following domestic cricket from Australia, New Zealand, and England more closely than even the IPL.<br>
+<br>Beyond that, I have a deep interest in history, geopolitics, and security affairs. I’m particularly drawn to topics like military strategy, counterterrorism, and insurgencies. A lot of my time goes into reading and exploring these areas-through books, long-form articles, and thinktank briefs. And occasionally, I like stepping into fiction through spy thrillers—John le Carré being a personal favorite.<br>
+<br>These interests often influence the kind of problems and domains I’m naturally drawn to, even within my work.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p class="footer-proverb">always learning, always growing</p>
+        <div class="footer-social">
+            <a href="https://github.com/abinash-ml/" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/abinash-pradhan-01" class="social-link" target="_blank"
+                rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://x.com/abinashp01" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-square-x-twitter">‌</i>
+            </a>
+            <a href="mailto:abinash01pradhan@gmail.com" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i class="far fa-envelope"></i>
+            </a>
+        </div>
+        <p class="footer-text">&copy; 2026 Abinash Pradhan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Dark mode toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        // Check for saved theme preference
+        if (localStorage.getItem('theme') === 'dark') {
+            body.classList.add('dark-mode');
+            themeToggle.innerHTML = '<i class="fas fa-sun" aria-hidden="true"></i>';
+            themeToggle.setAttribute('aria-pressed', 'true');
+        }
+
+        // Toggle theme
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const isDarkMode = body.classList.contains('dark-mode');
+
+            if (isDarkMode) {
+                localStorage.setItem('theme', 'dark');
+                themeToggle.innerHTML = '<i class="fas fa-sun" aria-hidden="true"></i>';
+                themeToggle.setAttribute('aria-pressed', 'true');
+            } else {
+                localStorage.setItem('theme', 'light');
+                themeToggle.innerHTML = '<i class="fas fa-moon" aria-hidden="true"></i>';
+                themeToggle.setAttribute('aria-pressed', 'false');
+            }
+        });
+
+        // Text animation
+        const textArray = [" a Machine Learning Engineer", " an AI Engineer", " a Data Scientist"];
+        const typingDelay = 80;  // Faster typing
+        const erasingDelay = 40; // Faster erasing
+        const newTextDelay = 1200; // Less time between words
+        let textArrayIndex = 0;
+        let charIndex = 0;
+
+        function type() {
+            if (charIndex < textArray[textArrayIndex].length) {
+                document.querySelector(".dynamic-text").textContent += textArray[textArrayIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, typingDelay);
+            } else {
+                setTimeout(erase, newTextDelay);
+            }
+        }
+
+        function erase() {
+            if (charIndex > 0) {
+                document.querySelector(".dynamic-text").textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, erasingDelay);
+            } else {
+                textArrayIndex++;
+                if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+                setTimeout(type, 600); // Start typing sooner
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            if (textArray.length) setTimeout(type, newTextDelay + 250);
+
+            // Initialize ScrollReveal
+            const sr = ScrollReveal({
+                origin: 'bottom',
+                distance: '30px',
+                duration: 800,
+                delay: 300,
+                easing: 'cubic-bezier(0.5, 0, 0, 1)',
+                reset: false
+            });
+
+            // Apply to about sections with staggered reveal
+            sr.reveal('.about-section', {
+                interval: 200,
+                scale: 0.98
+            });
+
+            // Apply to header elements
+            sr.reveal('.header h1, .animated-text-container', {
+                origin: 'top',
+                distance: '20px',
+                interval: 200
+            });
+
+            // Apply to skill tags with micro-delay for cascade effect
+            sr.reveal('.skill-tag', {
+                interval: 50,
+                distance: '10px',
+                origin: 'left',
+                delay: 500
+            });
+        });
+    </script>
+</body>
+
+</html>
