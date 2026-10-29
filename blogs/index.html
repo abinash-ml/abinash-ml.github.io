@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Directory</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #0044cc;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #0033aa;
+            margin-bottom: 10px;
+        }
+
+        p.subtitle {
+            font-size: 1.1rem;
+            color: #0066ff;
+        }
+
+        .category-section {
+            margin-bottom: 50px;
+        }
+
+        .category-title {
+            font-size: 1.8rem;
+            color: #002288;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #0066ff;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+
+        /* Swipeable Cards Container */
+        .card-carousel {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding: 10px 5px 20px 5px;
+            -webkit-overflow-scrolling: touch;
+            /* Hide scrollbar for clean UI */
+            scrollbar-width: thin;
+            scrollbar-color: #0066ff #f0f4ff;
+        }
+
+        .card-carousel::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .card-carousel::-webkit-scrollbar-track {
+            background: #f0f4ff;
+            border-radius: 3px;
+        }
+
+        .card-carousel::-webkit-scrollbar-thumb {
+            background-color: #0066ff;
+            border-radius: 3px;
+        }
+
+        /* Card Component */
+        .card {
+            flex: 0 0 300px;
+            scroll-snap-align: start;
+            border: 2px solid #0066ff;
+            border-radius: 12px;
+            padding: 24px;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 102, 255, 0.15);
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            color: #0033aa;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #0055dd;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .card a {
+            display: inline-block;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #0066ff;
+            padding: 10px 16px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-align: center;
+            transition: background-color 0.2s ease;
+        }
+
+        .card a:hover {
+            background-color: #0044cc;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                flex: 0 0 85%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Writing & Thoughts</h1>
+        <p class="subtitle">Swipe through categories to read posts</p>
+    </header>
+
+    <!-- Tech Section -->
+    <section class="category-section">
+        <h2 class="category-title">Tech</h2>
+        <div class="card-carousel">
+            <div class="card">
+                <h3>neGPT</h3>
+                <p>An exploration into custom-built generative models and lightweight LLM architectures.</p>
+                <a href="https://abinash.net/blogs/negpt/" target="_blank" rel="noopener">Read Post &rarr;</a>
+            </div>
+            <div class="card">
+                <h3>Thinking Machines</h3>
+                <p>Reflections on artificial general intelligence, consciousness, and machine reasoning limits.</p>
+                <a href="#">Read Post &rarr;</a>
+            </div>
+            <div class="card">
+                <h3>Building with WebGPU</h3>
+                <p>Unlocking native graphics and compute performance directly inside modern browsers.</p>
+                <a href="#">Read Post &rarr;</a>
+            </div>
+            <div class="card">
+                <h3>System Design 101</h3>
+                <p>Key primitives for building fault-tolerant, horizontally scalable distributed systems.</p>
+                <a href="#">Read Post &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Non-Tech Section -->
+    <section class="category-section">
+        <h2 class="category-title">Non-Tech</h2>
+        <div class="card-carousel">
+            <div class="card">
+                <h3>The Art of Slow Coffee</h3>
+                <p>Why ritualistic morning pour-overs change how you approach productivity and focus.</p>
+                <a href="#">Read Post &rarr;</a>
+            </div>
+            <div class="card">
+                <h3>Urban Trail Notes</h3>
+                <p>Observations from walking 20,000 steps through quiet neighborhood streets.</p>
+                <a href="#">Read Post &rarr;</a>
+            </div>
+            <div class="card">
+                <h3>Analogue Photography</h3>
+                <p>Why 35mm film forces better intentionality compared to digital burst modes.</p>
+                <a href="#">Read Post &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Musings Section -->
+    <section class="category-section">
+        <h2 class="category-title">Musings</h2>
+        <div class="card-carousel">
+            <div class="card">
+                <h3>Adrift</h3>
+                <p>A philosophical reflection on floating through uncertain transitions and finding anchor points.</p>
+                <a href="https://abinash.net/blogs/adrift/" target="_blank" rel="noopener">Read Post &rarr;</a>
+            </div>
+            <div class="card">
+                <h3>On Time & Memory</h3>
+                <p>How our perception of past years changes as routine replaces novelty.</p>
+                <a href="#">Read Post &rarr;</a>
+            </div>
+            <div class="card">
+                <h3>The Value of Unfinished Things</h3>
+                <p>Why abandoned projects are often necessary stepping stones rather than failures.</p>
+                <a href="#">Read Post &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
